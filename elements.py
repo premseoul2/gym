@@ -47,7 +47,7 @@ def main():
     content = response.content
 
     soup = BeautifulSoup(content, 'html.parser')
-    links = soup.find_all('a', href=lambda href: href and href.startswith("?action=register&course_sheet_id=457964"))
+    links = soup.find_all('a', href=lambda href: href and href.startswith("?action=register&course_sheet_id=458121"))
 
     if links:
         for link in links:
